@@ -1,0 +1,10 @@
+FROM mysql:latest
+
+env MYSQL_ROOT_PASSWORD=SenhaDoBanco
+env MYSQL_USER=zabbix
+env MYSQL_DATABASE=zabbix
+env MYSQL_PASSWORD=SenhaDoZabbix
+
+EXPOSE 3306
+
+CMD ["mysqld", "--character-set-server=utf8", "--collaction-server=utf8_bin"]
