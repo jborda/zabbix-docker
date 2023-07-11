@@ -1,0 +1,9 @@
+FROM zabbix-server-mysql:alpine-latest
+
+ENV DB_SERVER_HOST=mysql-zabbix
+ENV DB_SERVER_PORT=3306
+ENV MYSQL_ROOT_PASSWORD=SenhaDoBanco
+ENV MYSQL_DATABASE=zabbix
+ENV MYSQL_USER=zabbix
+ENV MYSQL_PASSWORD=SenhaDoZabbix
+ENV ZBX_ENABLE_SNMP_TRAPS=true
